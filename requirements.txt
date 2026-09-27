@@ -1,0 +1,9 @@
+google-adk
+langgraph
+python-dotenv
+pydantic
+fastapi
+uvicorn
+pytest
+semgrep==1.178.0
+bandit

@@ -1,0 +1,21 @@
+rules:
+  - id: python-sql-injection
+    languages:
+      - python
+    message: "Potential SQL injection: user-controlled input is concatenated into a SQL execute() call."
+    severity: ERROR
+    pattern: '$DB.execute($QUERY + $USER)'
+
+  - id: python-command-injection
+    languages:
+      - python
+    message: "Potential command injection: user-controlled input reaches subprocess.run() with shell=True."
+    severity: ERROR
+    pattern: 'subprocess.run($CMD, shell=True, ...)'
+
+  - id: python-xss
+    languages:
+      - python
+    message: "Potential XSS: user-controlled input is inserted directly into HTML."
+    severity: ERROR
+    pattern: 'return "<div class=''profile''>" + username + "</div>"'
