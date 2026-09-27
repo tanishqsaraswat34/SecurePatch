@@ -1,7 +1,7 @@
 # 🛡️ SecurePatch
 ### Agentic AI for Autonomous Security Patching
 
-> **Live Demo:** `Coming soon — Google Cloud deployment will be added here`
+> **Live Demo:** https://securepatch-276037872801.asia-south1.run.app/
 >
 > **GitHub:** https://github.com/tanishqsaraswat34/SecurePatch
 
